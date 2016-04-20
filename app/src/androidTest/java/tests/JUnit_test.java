@@ -13,7 +13,6 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity> {
 
     MainActivity mainActivity;
     public JUnit_test() {
-
         super(MainActivity.class);
     }
 
@@ -23,6 +22,6 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity> {
         TextView textView = (TextView) mainActivity.findViewById(R.id.tv1);
         String tester = textView.getText().toString();
 
-        assertEquals("Hello World", tester);
+        assertEquals("Hello World!", tester);
     }
 }
